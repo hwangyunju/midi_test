@@ -102,4 +102,6 @@ class MIDIComparator(PitchHandler, RhythmHandler, VelocityHandler):
         rhythm = self.get_rhythm_similarity_ratio()
         pitch = self.get_pitch_similarity_ratio()
         velocity = self.get_velocity_similarity_ratio()
+	#all_ratio = 100 * rhythm * pitch * velocity
+	#return int(round(float(all_ratio))) 
         return 1.0 * rhythm * pitch * velocity
